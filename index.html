@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story So Far</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #fdf0f0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            margin-top: 40px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #d63384;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .gallery {
+            position: relative;
+            width: 90%;
+            max-width: 1000px;
+            height: 600px;
+            margin-top: 50px;
+        }
+
+        /* Polaroid Style */
+        .polaroid {
+            position: absolute;
+            background: white;
+            padding: 15px 15px 40px 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .polaroid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+
+        .polaroid span {
+            font-family: 'Dancing Script', cursive;
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Scattering the photos */
+        .pic1 { top: 10%; left: 5%; transform: rotate(-10deg); }
+        .pic2 { top: 50%; left: 15%; transform: rotate(5deg); }
+        .pic3 { top: 5%; right: 10%; transform: rotate(8deg); }
+        .pic4 { top: 45%; right: 5%; transform: rotate(-5deg); }
+        .pic5 { top: 30%; left: 40%; transform: rotate(2deg); z-index: 1;}
+
+        .polaroid:hover {
+            transform: scale(1.1) rotate(0deg) !important;
+            z-index: 100;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .message-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            max-width: 500px;
+            margin: 40px 20px;
+            text-align: center;
+            border: 1px solid #ffccd5;
+        }
+
+        .heart-loader {
+            color: #ff4d6d;
+            font-size: 2rem;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Happy Monthsary, Beautiful!</h1>
+        <div class="heart-loader">❤️</div>
+    </header>
+
+    <div class="gallery">
+        <div class="polaroid pic1">
+            <img src="c:\Users\Admin\Downloads\shamei.jpg" alt="Memory 1">
+            <span>First Date ✨</span>
+        </div>
+
+        <div class="polaroid pic2">
+            <img src="c:\Users\Admin\Downloads\2026.jpg" alt="Memory 2">
+            <span>Our Laughter 🌸</span>
+        </div>
+
+        <div class="polaroid pic3">
+            <img src="c:\Users\Admin\Downloads\love love.jpg" alt="Memory 3">
+            <span>Every Sunset 🌅</span>
+        </div>
+
+        <div class="polaroid pic4">
+            <img src="c:\Users\Admin\Downloads\10 monthsarry.jpg" alt="Memory 4">
+            <span>Just You & Me 💌</span>
+        </div>
+
+        <div class="polaroid pic5">
+            <img src="c:\Users\Admin\Downloads\happy 10 months.jpg" alt="Memory 5">
+            <span>My Forever ❤️</span>
+        </div>
+    </div>
+
+    <div class="message-box">
+        <p>They say time flies when you're having fun, and this month has felt like a beautiful dream. Thank you for every smile, every hug, and every memory❤️❤️❤️.</p>
+        <strong>I love you more than all these photos can show!❤️</strong>
+    </div>
+
+</body>
+</html>
